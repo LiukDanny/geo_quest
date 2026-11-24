@@ -1,25 +1,28 @@
+using GeoQuest.Data;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace GeoQuest
 {
-    public enum ActionType 
-    {
-        Look,
-        Talk,
-        Take,
-    }
-
     public class Interactable : MonoBehaviour
     {
         [SerializeField] private bool _isActive = true;
         [SerializeField] private Transform _menuAnchor;
+        [SerializeField] private InteractionRule _item;
+
+        [HideInInspector] public List<ActionTag> ActionTags;
+        public InteractionRule Item => _item;
 
         public bool IsActive => _isActive;
         public Transform MenuAnchor => _menuAnchor;
 
-        public void Interact(ActionType action)
+        private void Start()
         {
-            Debug.Log($"{name} -> {action}");
+            ActionTags = new List<ActionTag>();
+            foreach (var actionRule in _item.ActionRules) 
+            {
+                ActionTags.Add(actionRule.Action);
+            }
         }
     }
 }

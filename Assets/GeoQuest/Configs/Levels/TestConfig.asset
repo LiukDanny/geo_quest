@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6118ed61b5d7bce42ab4ab8581843d37, type: 3}
+  m_Name: TestConfig
+  m_EditorClassIdentifier: 
+  id: TestConfig
+  displayName: Vienna Woods
+  interactionDatabase: {fileID: 11400000, guid: 9b910185838cf4153971b91b4f1e8ab3, type: 2}
+  gridConfig: {fileID: 11400000, guid: dc07db63cdea74847b738d30773eade2, type: 2}
+  background: {fileID: 3535854404286221855, guid: d55934829d3784e5c8eb036002762867, type: 3}
+  objects:
+  - itemId: knife
+    anchor: {x: 18, y: 2}
+  - itemId: apple_tree
+    anchor: {x: 24, y: 8}

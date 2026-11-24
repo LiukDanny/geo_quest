@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e4d65d780715b45ad2d47962cfc44a, type: 3}
+  m_Name: Persik
+  m_EditorClassIdentifier: 
+  Id: persik
+  DisplayName: Persik
+  Description: 
+  Icon: {fileID: 4321832919896367110, guid: 96f60f3a3cec96040b3dd74d1023ae31, type: 3}
+  ItemPrefab: {fileID: 6610905127183871166, guid: ea38b4ec20f721649bbff3473b1e86a1, type: 3}
+  Tags: []
+  Charge: -1

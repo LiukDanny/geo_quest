@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6135693042160019809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78eaf038a95492fa2adbbe33da4dff3, type: 3}
+  m_Name: Destoys
+  m_EditorClassIdentifier: 
+  EffectTag: 2
+  Subject: 0
+  Place: 0
+  OnlyWhenOutOfCharges: 0
+  Item: {fileID: 0}
+  Time: 0
+  Quantity: 1
+  Chance: 100
+--- !u!114 &-6110323495003459025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19db81071c062354098349c60cfe9cd1, type: 3}
+  m_Name: CutTree
+  m_EditorClassIdentifier: 
+  Action: {fileID: 11400000, guid: 449513057696a264a9f2d5b7ff26d9da, type: 2}
+  Conditions:
+  - {fileID: 11400000, guid: 1044c46eed5a142b49e31886b5eccf82, type: 2}
+  - {fileID: 11400000, guid: 4783ce93feea24b2c9108982374ad805, type: 2}
+  Time: 0
+  SpendsCharge: 0
+  Effects:
+  - {fileID: -4004064961054455796}
+  - {fileID: -6135693042160019809}
+--- !u!114 &-4004064961054455796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78eaf038a95492fa2adbbe33da4dff3, type: 3}
+  m_Name: CreateStick
+  m_EditorClassIdentifier: 
+  EffectTag: 0
+  Subject: 0
+  Place: 0
+  OnlyWhenOutOfCharges: 0
+  Item: {fileID: 11400000, guid: 7f534655d6c2f4671bbd41ec548bffba, type: 2}
+  Time: 0
+  Quantity: 1
+  Chance: 100
+--- !u!114 &-3816150693211194540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78eaf038a95492fa2adbbe33da4dff3, type: 3}
+  m_Name: CreateApple
+  m_EditorClassIdentifier: 
+  EffectTag: 0
+  Subject: 0
+  Place: 0
+  OnlyWhenOutOfCharges: 0
+  Item: {fileID: 11400000, guid: 0e6a2f0f99b924335a767b3b9660ff0a, type: 2}
+  Time: 0
+  Quantity: 1
+  Chance: 70
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154a7199f00c29d4b8c356782fa77817, type: 3}
+  m_Name: AppleTree
+  m_EditorClassIdentifier: 
+  Target: {fileID: 11400000, guid: 337e80581da5d9840bc61ebd6c46fa7d, type: 2}
+  ActionRules:
+  - {fileID: 7576298271835048063}
+  - {fileID: -6110323495003459025}
+--- !u!114 &7576298271835048063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19db81071c062354098349c60cfe9cd1, type: 3}
+  m_Name: ShakeTree
+  m_EditorClassIdentifier: 
+  Action: {fileID: 11400000, guid: 2310659a268adbd47bd96edc1ef0d0b9, type: 2}
+  Conditions: []
+  Time: 1
+  SpendsCharge: 0
+  Effects:
+  - {fileID: -3816150693211194540}

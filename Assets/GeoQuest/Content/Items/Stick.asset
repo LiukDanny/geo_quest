@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e4d65d780715b45ad2d47962cfc44a, type: 3}
+  m_Name: Stick
+  m_EditorClassIdentifier: 
+  Id: stick
+  DisplayName: Stick
+  Description: A cane, a firewood, a toothpick, a handle. You choose
+  Icon: {fileID: 8447664195894564583, guid: f3d3d52329a624d6d9994b33e2a35ccf, type: 3}
+  ItemPrefab: {fileID: 1877920848579702312, guid: 32202340a5c664a80803ffaf347cc484, type: 3}
+  Tags:
+  - {fileID: 11400000, guid: 3ddddf462c2764acca327752992a716b, type: 2}
+  Charge: 1

@@ -1,3 +1,5 @@
+using Cysharp.Threading.Tasks;
+using GeoQuest.Data;
 using UnityEngine;
 
 namespace GeoQuest
@@ -8,20 +10,27 @@ namespace GeoQuest
         [SerializeField] private InteractionMenuView _view;
 
         private Interactable _current;
+        private InteractionService _interactionService;
 
-        void Awake()
+        public void Init(InteractionService interactionService)
+        {
+            _interactionService = interactionService;
+        }
+
+        private void Awake()
         {
             _view.Hide();
             _view.ActionSelected += OnActionSelected;
         }
 
-        public void Select(Interactable interactable)
+        public void Select(Interactable interactable, bool showMenu = true)
         {
             if (!interactable.IsActive)
                 return;
 
             _current = interactable;
-            ShowMenu();
+            if(showMenu)
+                ShowMenu();
         }
 
         public void Hide()
@@ -30,23 +39,21 @@ namespace GeoQuest
             _view.Hide();
         }
 
-        /*void LateUpdate()
-        {
-            if (_current != null)
-                UpdatePosition();
-        }*/
-
         private void ShowMenu()
         {
             Vector2 screenPos =
                 _camera.WorldToViewportPoint(_current.MenuAnchor.position);
 
-            _view.Show(screenPos);
+            _view.Show(screenPos, _current.ActionTags);
         }
 
-        private void OnActionSelected(ActionType action)
+        //TODO: Move to interaction service
+        public async void OnActionSelected(ActionTag action)
         {
-            _current?.Interact(action);
+            if (_current != null)
+            {
+                await _interactionService.Interact(_current, action);
+            }
             Hide();
         }
     }

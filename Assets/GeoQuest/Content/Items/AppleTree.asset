@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e4d65d780715b45ad2d47962cfc44a, type: 3}
+  m_Name: AppleTree
+  m_EditorClassIdentifier: 
+  Id: apple_tree
+  DisplayName: Apple Tree
+  Description: 
+  Icon: {fileID: -672430352329735563, guid: 03cccfceaf7e0c949b064f6217e5f123, type: 3}
+  ItemPrefab: {fileID: 6315197485328337563, guid: 77392e9fc3d348148a80d399ee1b167d, type: 3}
+  Tags:
+  - {fileID: 11400000, guid: cbfe6a28778884d63a0b5aa68acac6ac, type: 2}
+  - {fileID: 11400000, guid: 3ddddf462c2764acca327752992a716b, type: 2}
+  - {fileID: 11400000, guid: 441f5765912779b4383fa2afa2d5d852, type: 2}
+  Charge: -1

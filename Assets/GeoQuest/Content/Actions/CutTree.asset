@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19db81071c062354098349c60cfe9cd1, type: 3}
+  m_Name: CutTree
+  m_EditorClassIdentifier: 
+  Action: {fileID: 11400000, guid: 449513057696a264a9f2d5b7ff26d9da, type: 2}
+  Conditions:
+  - {fileID: 11400000, guid: 1044c46eed5a142b49e31886b5eccf82, type: 2}
+  - {fileID: 11400000, guid: 4783ce93feea24b2c9108982374ad805, type: 2}
+  Time: 0
+  Price: 0
+  Effects:
+  - {fileID: 11400000, guid: dc8fbb925c65f43a4810900b86308f7b, type: 2}
+  - {fileID: 11400000, guid: 5f4a6df20569d4bcb92c8b2dd8916539, type: 2}

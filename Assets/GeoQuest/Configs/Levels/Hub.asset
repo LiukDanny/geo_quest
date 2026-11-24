@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6118ed61b5d7bce42ab4ab8581843d37, type: 3}
+  m_Name: Hub
+  m_EditorClassIdentifier: 
+  id: Hub
+  interactionDatabase: {fileID: 0}
+  gridConfig: {fileID: 11400000, guid: acd9b4afb6cbad544b87f705a9f19185, type: 2}
+  background: {fileID: 1982637054666957760, guid: a73df92230576ae4985ed415a8a663d2, type: 3}
+  objects: []

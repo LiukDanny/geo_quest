@@ -2,17 +2,20 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - InventoryPanel
+  - InventoryButton
+  - Slot
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Items
   - Water
   - UI
-  - 
-  - 
+  - Grid
+  - Bg
   - 
   - 
   - 
@@ -41,3 +44,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1492332985
+    locked: 0
+  - name: Grid
+    uniqueID: 1541602703
+    locked: 0
+  - name: Objects
+    uniqueID: 3878590007
+    locked: 0
+  - name: Canvas
+    uniqueID: 4037502927
+    locked: 0
+  m_RenderingLayers:
+  - Default
